@@ -73,3 +73,23 @@ div form label{
     font-size: 30px;
 }
 
+@media (max-width:450px){
+    div form{
+        width: 400px;
+        height: 550px;
+    }
+
+    div form input{
+        width: 300px;
+    }
+}
+
+@media (max-width:300px){
+    div form{
+        width: 280px;
+    }
+
+    div form input{
+        width: 200px;
+    }
+}

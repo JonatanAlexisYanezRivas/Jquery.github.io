@@ -10,20 +10,25 @@ $(document).ready(function(){
       
         if(operador == "+"){
         var operacion = num1 + num2;
-        $("#resultado").text(`El resultado de la suma es: ${operacion}`)
+        /*$("#resultado").text(`El resultado de la suma es: ${operacion}`)*/
+        $("#resultado").text('El resultado de la suma es:')
+        $("#input-resultado").val(operacion);
         }
         else if(operador == "-"){
         var operacion = num1 - num2;
-        $("#resultado").text(`El resultado de la resta es: ${operacion}`)
+        $("#resultado").text('El resultado de la resta es:')
+        $("#input-resultado").val(operacion);
         }
         else if(operador == "*"){
-            var operacion = num1 * num2;
-            $("#resultado").text(`El resultado de la multiplicación es: ${operacion}`)
-            }
-            else if(operador == "/"){
-                var operacion = num1 / num2;
-                $("#resultado").text(`El resultado de la divisón es: ${operacion}`)
-                }
+        var operacion = num1 * num2;
+        $("#resultado").text('El resultado de la multiplicación es:')
+        $("#input-resultado").val(operacion);
+        }
+        else if(operador == "/"){
+        var operacion = num1 / num2;
+        $("#resultado").text('El resultado de la divisón es:')
+        $("#input-resultado").val(operacion);
+        }
         else{
             $("#resultado").text('Signo no valdo')
         }
